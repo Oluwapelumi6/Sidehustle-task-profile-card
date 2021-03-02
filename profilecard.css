@@ -1,0 +1,153 @@
+*{
+    margin:0;
+    border:0;
+    padding: 0;
+    
+}
+body{
+    background-color: hsl(185, 75%, 39%) ;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+    
+
+section{
+    background: hsl(185, 75%, 39%) ;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    align-items: center;
+    position: relative;
+}
+
+.card{
+    width: 375px;
+    border-radius: 20px;
+    background: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.card-body{
+    padding:0 20px 30px;
+
+}
+.card-header{
+    background-image: url(images/bg-pattern-card.svg);
+   background-size: cover;
+    height: 150px;
+
+}
+
+.victor-image{
+    width: 110px;
+    height:110px;
+    border-radius: 50%;
+    border: 5px solid white;
+    overflow: hidden;
+    margin:-55px auto 30px auto;
+}
+
+.victor-image img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.age,
+.city,
+.meta{
+    font-weight: 400;
+    color:hsl(0, 0%, 59%);
+    opacity: .5;
+
+}
+
+.image-name{
+    margin-bottom:12px;
+    font-weight: 700;
+    color:hsl(229, 23%, 23%);
+    font-size: 18px;
+}
+
+
+
+.age{
+    font-weight: 400;
+    margin-left: 6px;
+}
+
+.city{
+      font-weight: .9rem;
+}
+
+
+.card-footer{
+    border-top: 1px solid hsl(0, 0%, 59%);
+    display: flex;
+    padding: 0 25px;
+
+
+}
+
+.card-footer .item{
+    flex: 1;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .item .value{
+    font-size: 1rem;
+    margin-bottom: 6px;
+    font-weight: 700;
+     color:hsl(229, 23%, 23%);
+     font-size: 18px;
+
+
+}
+
+
+.card-footer .item .meta{
+    font-size: .6rem;
+    letter-spacing: 1px;
+}
+
+.circle .upper,
+.circle .lower{
+    animation: 2s circles forwards;
+}
+
+
+
+.upper{
+
+    position: fixed;
+    bottom: 39%;
+    right: 51%;
+   transform: translate(-100px, -50px);
+}
+
+.lower{
+    position: fixed;
+    bottom: -82%;
+    right: -14%;
+   transform: translate(100px, 50px);
+}
+
+@keyframes circles{
+    0%{
+        opacity: 0;
+
+    }
+
+    100%{
+        opacity:1;
+        transform: translate(0);
+    }
+
+}
